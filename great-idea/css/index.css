@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	margin: 5%
 }
 ol, ul {
 	list-style: none;
@@ -64,239 +65,199 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-.nav-title {
+header{
 	display:flex;
-	width: 100%;
-	color: gray;
-	text-decoration:none;
+	width:100%
 }
 
 nav {
-	justify-content:space-between;
 	display:flex;
-	font-size: 20px;
+	justify-content:space-between;
+	width:100%
 }
 nav a{
-	color: gray;
-	text-decoration:none;
-	margin: 0% 15% 0% 0%;
-}
-
-.logo{
-	margin: 0px 0px 0px 30px;
-}
-
-.first-section{
-	padding: 5%;
-	display:flex;
-	justify-content:space-around;
-	width:100%;
- }
-.head-text h1{
-	flex-direction:column;
-	margin-top: 20%;
-	text-align:center;
-	font-size:90px;
-}
-
-span{
-	margin: 1% 0% 0% 30%;
-	border:1px solid black;
-	font-size: 22px;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border-top: 2px solid black;
-		margin:3%;
-}
-
-.second-section {
-	display:flex;
-	width:100%;
-	margin: 1px ;
-}
-
-.third-section {
-	display:flex;
-	width:100%;
-	margin: 1px ;
-}
-
-.column2{
-	justify-content:row;
-	margin:10px;
-	margin-top:2%;
-	margin-bottom:2%;
-	width:47%;
-}
-.column3 p{
-	display:flex;
-	margin-top:2%;
-	width:83%;
-}
-
-.middle-img{
-	width:100%;
-	overflow:hidden;
-	align-item:center;
-}
-.footer {
-	margin-top:50px;
-  width: 25%;
-  color: black;
-  text-align: left;
-}
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
 	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-	margin: 90px;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-}
-
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-/* Your code starts here! */
-
-.nav-title {
-	display:flex;
-	width: 100%;
 	color: gray;
 	text-decoration:none;
-}
-
-nav {
-	justify-content:space-between;
-	display:flex;
-	font-size: 20px;
-}
-nav a{
-	color: gray;
-	text-decoration:none;
-	margin: 0% 15% 0% 0%;
-}
-
-.logo{
-	margin: 0px 0px 0px 30px;
-}
-
-.first-section{
-	padding: 5%;
-	display:flex;
-	justify-content:space-around;
-	width:100%;
- }
-.head-text h1{
-	flex-direction:column;
-	margin-top: 20%;
-	text-align:center;
-	font-size:90px;
 }
 
 span{
-	margin: 1% 0% 0% 30%;
+	flex-direction:flex-start;
 	border:1px solid black;
-	font-size: 22px;
 }
 
 hr {
     display: block;
     height: 1px;
+		width:100%;
     border-top: 2px solid black;
-		margin:3%;
 }
 
-.second-section {
+.logo{
+	margin: 0%;
+}
+
+.first-index-section{
+	border:solid;
 	display:flex;
+	margin: 2% 0% 2% 0%;
+	justify-content:space-between;
+	align-item:center;
+	height:60%;
 	width:100%;
+ }
+
+ .get-started{
+	 margin-bottom:90%;
+	 font-size:17px;
+ }
+
+ .first-img{
+	width:48%;
+	margin: 1% 0% 0% 20%;
+ }
+
+
+.first-section{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+ }
+
+ .p-struct{
+	 display:flex;
+	 flex-direction:column;
+	 margin: 5%;
+ }
+ .w-struct{
+	 width:100%;
+	 margin: 2% 2% 2% 0%;
+ }
+
+.head-text {
+	height: 80%;
+	width:50%;
+	border:solid;
+	align-item:center;
+  margin: 2% 0% 18% 0%;
+	justify-content:space-around;
+	flex-direction:column;
+	text-align:center;
+	font-size:85px;
+}
+
+.learn-more{
+	background:white;
+	font-size: 14px;
+	text-align:center;
+	flex-wrap:nowrap;
+	margin: 0% 5% 1% 5%;
+	padding:1%;
+	height: 22%;
+	width:27%;
+}
+
+.second-index-section{
+	display:flex;
+	justify-content:space-evenly;
+	margin-top:1%;
+	width:100%;
+}
+
+.third-index-section {
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+}
+
+.main-section {
+	flex-direction:column;
+	display:flex;
+	justify-content:space-around;
+	width: 100%;
 	margin: 1px ;
 }
 
-.third-section {
+.last-section{
+	margin-top: 4%;
 	display:flex;
 	width:100%;
-	margin: 1px ;
+	height: 42%;
 }
 
-.column2{
-	justify-content:row;
-	margin:10px;
-	margin-top:2%;
-	margin-bottom:2%;
-	width:47%;
-}
-.column3 p{
-	display:flex;
-	margin-top:2%;
-	width:83%;
-}
 
 .middle-img{
 	width:100%;
 	overflow:hidden;
 	align-item:center;
 }
+
 .footer {
 	margin-top:50px;
   width: 25%;
   color: black;
   text-align: left;
+}
+
+.columns{
+	display:flex;
+	width:100%;
+	flex-wrap:wrap;
+}
+
+	
+.top{
+	display:flex;
+	width:100%;
+	margin: 1px ;
+}
+
+.middle{
+	display:flex;
+	width:100%;
+	margin: 1px ;
+}
+
+.bottom{
+	display:flex;
+	width:100%;
+	margin: 1px ;
+}
+
+.services-header-img{
+	margin-bottom: 1%;
+	width:100%;
+}
+
+.services-info-img{
+	margin: 0% 0% 0% 2%;
+	width:48%;
+}
+
+.box{
+	background:gray;
+	display:flex;
+	flex-direction:column;
+	margin:10px;
+	margin-top:2%;
+	margin-bottom:2%;
+	width:87%;
+}
+
+.bottom-text-order{
+	display:flex;
+	flex-direction:column;
+	width:50%;
+}
+
+ul {
+	width: 47%;
+	flex-direction:column;
+	padding: 5%;
+	list-style:disc;
+}
+
+footer{
+	margin: 2%;
+	text-align:center;
 }
